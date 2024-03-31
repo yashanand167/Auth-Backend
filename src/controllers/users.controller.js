@@ -43,7 +43,7 @@ export const loginUser = async (req, res) => {
 
 export const logoutUser = async (req, res, next) => {
   try {
-    const authHeader = req.header("Authorization")
+    const authHeader = req.header("Authorization");
     await res.json({ message: "Logout successful" });
   } catch (error) {
     next(error);
